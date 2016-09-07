@@ -13,8 +13,8 @@ public class SampleSauceTest {
   public static void main(String[] args) throws Exception {
 
     DesiredCapabilities caps = DesiredCapabilities.chrome();
-    caps.setCapability("platform", "Windows XP");
-    caps.setCapability("version", "43.0");
+    caps.setCapability("platform", "Windows 10");
+    caps.setCapability("version", "48.0");
 
     WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
 
@@ -40,10 +40,6 @@ public class SampleSauceTest {
         driver.findElement(By.xpath("//ul[@id='user-links']/li[3]/a/span")).click();
         driver.findElement(By.xpath("//ul[@id='user-links']/li[3]/a/span")).click();
         driver.findElement(By.xpath("//form[@class='logout-form']/button")).click();
-        driver = (FirefoxDriver) driver.switchTo().window(Windows 10 Firefox 48);
         driver.quit();
-        System.out.println("title of page is: " + driver.getTitle());
-
-    driver.quit();
   }
 }
