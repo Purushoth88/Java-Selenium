@@ -10,7 +10,7 @@ public class SampleSauceTest {
   public static final String ACCESS_KEY = "3b1c6846-0b29-40e3-a87a-70d93820d78a";
   public static final String URL = "http://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:80/wd/hub";
 
-  public static void main(String[] args) throws Exception {
+  public static void setUp() throws Exception {
 
     DesiredCapabilities caps = DesiredCapabilities.chrome();
     caps.setCapability("platform", "Windows 10");
